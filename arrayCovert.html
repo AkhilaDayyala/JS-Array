@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function convert(arr, key) {
+    return arr.reduce((acc, obj) => {
+        acc[obj[key]] = obj;
+        return acc;
+    }, {});
+}
+
+const inputArray = [
+    { id: 1, value: "Akhila" },
+    { id: 2, value: "Akki" }
+];
+
+const result = convert(inputArray, 'id');
+console.log(result);
+
+
+    </script>
+</head>
+<body>
+    
+   
+    
+</body>
+</html>
